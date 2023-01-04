@@ -1,9 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-import { useState } from 'react'
+import All_Orders from "../components/All_Orders"
+import Remove from "../components/Remove"
+import { useState,useEffect } from 'react'
 
 const Home = () => {
   const [option, setOption]=useState("")
+
+  useEffect(()=>setOption("orders"),[])
   return (
     <div className='bg-gray-300 w-full'>
         <div className='flex  items-center bg-gradient-to-r from-green-500 via-pink-500 to-red-500 w-full h-20'>
@@ -25,17 +29,11 @@ const Home = () => {
         </div>
 
         <div className='flex justify-center w-full'>
-          <div className='bg-white w-w-80 mb-5'>
+          <div className='bg-white w-w-80 mb-5 p-5'>
             <div>
               {
-                option =="orders" ? <div>orders</div> : option =="add" ? <div>add item</div> : option =="remove" ? <div>remove item</div> : option =="overview" ? <div>overview</div> :""
+                option =="orders" ? <div className='w-full'> <All_Orders /> </div> : option =="add" ? <div>add item</div> : option =="remove" ? <div className='w-full'> <Remove/> </div> : option =="overview" ? <div>overview</div> :""
               }
-              <ul className=''>
-                <li className=''>ALL ORDERS</li>
-                <li className=''>NEW MENU ITEM</li>
-                <li className=''>REMOVE MENU ITEM</li>
-                <li className=''>OVERVIEW</li>
-              </ul>
             </div>
           </div>
         </div>
