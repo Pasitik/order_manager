@@ -1,40 +1,40 @@
 
 const OrderList =[
     {
-        Food:"Banku",
-        Quantity:"1", 
-        Price:"30", 
-        Customer:"Solomon Afreyei",
-        Location:"UDS Nyankpala Campus", 
-        Phone:"+233551234567", 
-        Time:"10am"
+        food:"Banku",
+        quantity:"1", 
+        price:"30", 
+        customer:"Solomon Afreyei",
+        location:"UDS Nyankpala Campus", 
+        phone:"+233551234567", 
+        time:"10am"
     },
     {
-        Food:"Banku",
-        Quantity:"1", 
-        Price:"30", 
-        Customer:"Solomon Afreyei",
-        Location:"UDS Nyankpala Campus", 
-        Phone:"+233551234567", 
-        Time:"10am"
+        food:"Banku",
+        quantity:"1", 
+        price:"30", 
+        customer:"Solomon Afreyei",
+        location:"UDS Nyankpala Campus", 
+        phone:"+233551234567", 
+        time:"10am"
     },
     {
-        Food:"Banku",
-        Quantity:"1", 
-        Price:"30", 
-        Customer:"Solomon Afreyei",
-        Location:"UDS Nyankpala Campus", 
-        Phone:"+233551234567", 
-        Time:"10am"
+        food:"Banku",
+        quantity:"1", 
+        price:"30", 
+        customer:"Solomon Afreyei",
+        location:"UDS Nyankpala Campus", 
+        phone:"+233551234567", 
+        time:"10am"
     },
     {
-        Food:"Banku",
-        Quantity:"1", 
-        Price:"30", 
-        Customer:"Solomon Afreyei",
-        Location:"UDS Nyankpala Campus", 
-        Phone:"+233551234567", 
-        Time:"10am"
+        food:"Banku",
+        quantity:"1", 
+        price:"30", 
+        customer:"Solomon Afreyei",
+        location:"UDS Nyankpala Campus", 
+        phone:"+233551234567", 
+        time:"10am"
     },
 ] 
 

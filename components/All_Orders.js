@@ -1,7 +1,7 @@
 import React from 'react'
-import OrderList from "../components/OrderList"
+//import OrderList from "../components/OrderList"
 
-const All_Orders = () => {
+const All_Orders = ({orderList}) => {
   return (
     <div className='w-full'>
         <table className=' table-fixed w-full'>
@@ -16,20 +16,20 @@ const All_Orders = () => {
             </thead>
             <tbody>
                     {
-                        OrderList.map((order)=>{
-                            return(
-                            <tr>
-                            <td>{order.Food}</td>
-                            <td>{order.Quantity}</td>
-                            <td>{order.Price}</td>
-                            <td>{order.Customer}</td>
-                            <td>{order.Location}</td>
-                            <td>{order.Phone}</td>
-                            <td>{order.Time}</td>
+                        orderList.map((item)=>
+                            (
+                            <tr key={item.id}>
+                            <td>{item.food}</td>
+                            <td>{item.quantity}</td>
+                            <td>{item.price}</td>
+                            <td>{item.customer}</td>
+                            <td>{item.location}</td>
+                            <td>{item.phone}</td>
+                            <td>{item.time}</td>
                             </tr>
                             )
 
-                        })
+                        )
                     }
 
             </tbody>
