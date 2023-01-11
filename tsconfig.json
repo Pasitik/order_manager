@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/orders/orders.js", "pages/index.js", "pages/api/orders/index.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/orders/orders.js", "pages/index.tsx", "pages/api/orders/index.tsx"],
   "exclude": ["node_modules"]
 }

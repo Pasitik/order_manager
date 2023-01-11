@@ -1,8 +1,10 @@
 import dbConnect from "../../../db/dbConect"
 import order from '../../../db/models/orderModel'
+import type { NextApiRequest, NextApiResponse } from 'next'
 
 
-export default async function handler(req, res) {
+
+export default async function handler(req: NextApiRequest, res:NextApiResponse) {
     const {method} =req
 
     await dbConnect() 

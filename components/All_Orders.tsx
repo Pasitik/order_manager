@@ -1,7 +1,20 @@
 import React from 'react'
 //import OrderList from "../components/OrderList"
 
-const All_Orders = ({orderList}) => {
+interface IProps{
+    orderList:{
+      id:string 
+      food:string
+      quantity:number 
+      price:number 
+      customer: string 
+      location: string 
+      phone:string 
+      time: string 
+    }[]
+  }
+  
+const All_Orders:React.FC<IProps> = ({orderList}) => {
   return (
     <div className='w-full'>
         <table className=' table-fixed w-full'>
@@ -21,7 +34,7 @@ const All_Orders = ({orderList}) => {
                             <tr key={item.id}>
                             <td>{item.food}</td>
                             <td>{item.quantity}</td>
-                            <td>{item.price}</td>
+                            <td>{item.price * item.quantity}</td>
                             <td>{item.customer}</td>
                             <td>{item.location}</td>
                             <td>{item.phone}</td>

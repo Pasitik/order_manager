@@ -14,7 +14,22 @@ export const getServerSideProps=async()=>{
   }
 }
 
-const Home = ({orderList}) => {
+
+interface IProps{
+  orderList:{
+    id:string 
+    food:string
+    quantity:number 
+    price:number 
+    customer: string 
+    location: string 
+    phone:string 
+    time: string 
+  }[]
+}
+
+const Home:React.FC<IProps> = ({orderList}) => {
+
   const [option, setOption]=useState("")
 
   useEffect(()=>setOption("orders"),[])
