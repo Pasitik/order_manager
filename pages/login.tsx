@@ -65,7 +65,7 @@ const Login = () => {
               className="lg:w-6/12 flex items-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none bg-gradient-to-r from-green-500 via-pink-500 to-red-500"
             >
               <div className="text-white px-4 py-6 md:p-12 md:mx-6">
-                <h4 className="text-xl font-semibold mb-6">We are more than just a company</h4>
+                <h4 className="text-xl font-semibold mb-6">We are more than just a Kitchen</h4>
                 <p className="text-sm">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
