@@ -5,11 +5,13 @@ import Remove from "../components/Remove"
 import { useState,useEffect } from 'react'
 import axios from 'axios'
 
+
 export const getServerSideProps=async()=>{
-  const res= await axios.get("http://localhost:3000/api/orders")
+  
+  const response= await axios.get("http://localhost:3000/api/orders")  
   return{
     props:{
-      orderList: res.data
+      orderList: response.data
     }
   }
 }
